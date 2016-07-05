@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="gmail_testing">
+<test  name="login_logout">
+<classes>
+<class  name="com.ee.mavenlearning.com.ee.gmail.signin"></class>
+</classes>
+</test>
+<test name="sending_mail">
+<classes>
+<class name="com.ee.mavenlearning.com.ee.gmail.compose_mail"></class>
+</classes>
+</test>
+<test name="delete-sentlist">
+<classes>
+<class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist"></class>
+</classes>
+</test>
+</suite>
