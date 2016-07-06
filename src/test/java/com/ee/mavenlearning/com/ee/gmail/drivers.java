@@ -33,7 +33,7 @@ public class drivers {
    
   // @SuppressWarnings("null")
 public static WebDriver Browser(BrowserType type,boolean isgrid) throws MalformedURLException{
-	    WebDriver wd=null
+	    WebDriver wd=null;
 	    /*
 if(isgrid){
 		   
