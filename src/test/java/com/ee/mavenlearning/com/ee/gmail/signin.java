@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 public class signin {
 	
 	WebDriver wd;
-	drivers.BrowserType type=drivers.BrowserType.FIREFOX;
+	drivers.BrowserType type=drivers.BrowserType.CHROME;
 	elements we ;
 	 	//String str="hjhjvhv";
 	public String url="http://www.gmail.com";
