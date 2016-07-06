@@ -75,17 +75,17 @@ public class elements {
   String start="//div[@class='nH']/div/div/div[@class='Cp']/div/table/tbody/tr";
   String end="]";
   
-	public void sign(String str){
+	public void sign(String user,String password){
 		//wd.manage().deleteAllCookies();
-		field_user.sendKeys("testerpareshpatil@gmail.com");
+		field_user.sendKeys(user);
 		button_next.click();
 		WebElement pass = new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(field_pass));
-		pass.sendKeys("testerparesh");
+		pass.sendKeys(password);
 		field_signin.click();
 		
 	}
 	public void check_error(){
-		WebElement get_text=new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(field_test1));
+		WebElement get_text=new WebDriverWait(wd, 20).until(ExpectedConditions.visibilityOf(field_test1));
 		String x =get_text.getText();
 		System.out.println(x);
 	    Assert.assertEquals(x,"Gmail");
@@ -109,13 +109,13 @@ public class elements {
 			logout.click();
 			
 		}
-		public void compose() throws IOException{
+		public void compose(String mail,String sub,String msg) throws IOException{
 			WebElement compose_click2 = new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(compose_click));
 			compose_click2.click();
 			WebElement compose_to2 = new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(compose_to));
-			compose_to2.sendKeys("mayureshmechanical@gmail.com");
-			compose_subject.sendKeys("adjd");
-			compose_message.sendKeys("defwefwef");
+			compose_to2.sendKeys(mail);
+			compose_subject.sendKeys(sub);
+			compose_message.sendKeys(msg);
 			compose_attach.click();
 			Runtime.getRuntime().exec("C:/Users/paresh/Desktop/resume");
 			compose_send.click();

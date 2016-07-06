@@ -1,353 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" total="3" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="gmail_testing" duration-ms="136977" started-at="2016-07-05T04:50:39Z" finished-at="2016-07-05T04:52:56Z">
+  <suite name="Default suite" duration-ms="54399" started-at="2016-07-06T10:24:51Z" finished-at="2016-07-06T10:25:46Z">
     <groups>
     </groups>
-    <test name="login_logout" duration-ms="62801" started-at="2016-07-05T04:50:39Z" finished-at="2016-07-05T04:51:42Z">
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@e2abd]" name="setup" is-config="true" duration-ms="16839" started-at="2016-07-05T10:20:39Z" finished-at="2016-07-05T10:20:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="sign_in()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@e2abd]" name="sign_in" duration-ms="28383" started-at="2016-07-05T10:20:56Z" finished-at="2016-07-05T10:21:24Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (e66dfab5-b7d8-472f-a2da-20527c668fcb)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=e66dfab5-b7d8-472f-a2da-20527c668fcb, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e66dfab5-b7d8-472f-a2da-20527c668fcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (e66dfab5-b7d8-472f-a2da-20527c668fcb)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=e66dfab5-b7d8-472f-a2da-20527c668fcb, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e66dfab5-b7d8-472f-a2da-20527c668fcb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.ee.mavenlearning.com.ee.gmail.elements.check_error(elements.java:88)
-	at com.ee.mavenlearning.com.ee.gmail.signin.sign_in(signin.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-Command duration or timeout: 15.35 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=e66dfab5-b7d8-472f-a2da-20527c668fcb, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e66dfab5-b7d8-472f-a2da-20527c668fcb
-*** Element info: {Using=xpath, value=.//*[@id=':j']/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 26 more
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	... 39 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous3875327410443698120webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous3875327410443698120webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous3875327410443698120webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous3875327410443698120webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous3875327410443698120webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sign_in -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@e2abd]" name="close" is-config="true" duration-ms="17506" started-at="2016-07-05T10:21:24Z" finished-at="2016-07-05T10:21:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
-    </test> <!-- login_logout -->
-    <test name="sending_mail" duration-ms="33306" started-at="2016-07-05T04:51:42Z" finished-at="2016-07-05T04:52:15Z">
+    <test name="Default test" duration-ms="54399" started-at="2016-07-06T10:24:51Z" finished-at="2016-07-06T10:25:46Z">
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@15d3402]" name="setup" is-config="true" duration-ms="0" started-at="2016-07-05T10:21:42Z" finished-at="2016-07-05T10:21:42Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (f23643f9-01d3-4b54-96fb-91b994ff4cd6)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=f23643f9-01d3-4b54-96fb-91b994ff4cd6, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f23643f9-01d3-4b54-96fb-91b994ff4cd6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (f23643f9-01d3-4b54-96fb-91b994ff4cd6)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=f23643f9-01d3-4b54-96fb-91b994ff4cd6, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f23643f9-01d3-4b54-96fb-91b994ff4cd6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.ee.mavenlearning.com.ee.gmail.elements.check_error(elements.java:88)
-	at com.ee.mavenlearning.com.ee.gmail.compose_mail.setup(compose_mail.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-Command duration or timeout: 14.53 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=f23643f9-01d3-4b54-96fb-91b994ff4cd6, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f23643f9-01d3-4b54-96fb-91b994ff4cd6
-*** Element info: {Using=xpath, value=.//*[@id=':j']/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 24 more
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	... 37 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous8808542474774472658webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous8808542474774472658webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous8808542474774472658webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous8808542474774472658webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous8808542474774472658webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1375618]" name="setup" is-config="true" duration-ms="15130" started-at="2016-07-06T15:54:51Z" finished-at="2016-07-06T15:55:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="compose()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@15d3402]" name="compose" duration-ms="3" started-at="2016-07-05T10:22:15Z" finished-at="2016-07-05T10:22:15Z">
+        <test-method status="PASS" signature="compose(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1375618]" name="compose" duration-ms="37981" started-at="2016-07-06T15:55:07Z" data-provider="compse_msg" finished-at="2016-07-06T15:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testerpareshpatil@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testerparesh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amitsinghcccc@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[hiiiii]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compose -->
-        <test-method status="SKIP" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@15d3402]" name="close" is-config="true" duration-ms="0" started-at="2016-07-05T10:22:15Z" finished-at="2016-07-05T10:22:15Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1375618]" name="close" is-config="true" duration-ms="1000" started-at="2016-07-06T15:55:45Z" finished-at="2016-07-06T15:55:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-    </test> <!-- sending_mail -->
-    <test name="delete-sentlist" duration-ms="40593" started-at="2016-07-05T04:52:15Z" finished-at="2016-07-05T04:52:56Z">
-      <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@7fa833]" name="setup" is-config="true" duration-ms="0" started-at="2016-07-05T10:22:15Z" finished-at="2016-07-05T10:22:15Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (1daf112c-fac4-4da4-adf7-22807bbcf9c9)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=1daf112c-fac4-4da4-adf7-22807bbcf9c9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1daf112c-fac4-4da4-adf7-22807bbcf9c9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (1daf112c-fac4-4da4-adf7-22807bbcf9c9)] -> xpath: .//*[@id=':j']/span]
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=1daf112c-fac4-4da4-adf7-22807bbcf9c9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1daf112c-fac4-4da4-adf7-22807bbcf9c9
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.ee.mavenlearning.com.ee.gmail.elements.check_error(elements.java:88)
-	at com.ee.mavenlearning.com.ee.gmail.deleting_sentlist.setup(deleting_sentlist.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-Command duration or timeout: 15.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=45.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=1daf112c-fac4-4da4-adf7-22807bbcf9c9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1daf112c-fac4-4da4-adf7-22807bbcf9c9
-*** Element info: {Using=xpath, value=.//*[@id=':j']/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 24 more
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	... 37 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id=':j']/span"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'ShivMuni-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-Driver info: driver.version: unknown
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous1520863464424400555webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous1520863464424400555webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous1520863464424400555webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous1520863464424400555webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/shivmuni/AppData/Local/Temp/anonymous1520863464424400555webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="delete()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@7fa833]" name="delete" duration-ms="0" started-at="2016-07-05T10:22:56Z" finished-at="2016-07-05T10:22:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete -->
-        <test-method status="SKIP" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@7fa833]" name="close" is-config="true" duration-ms="0" started-at="2016-07-05T10:22:56Z" finished-at="2016-07-05T10:22:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
-    </test> <!-- delete-sentlist -->
-  </suite> <!-- gmail_testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [gmail_testing]">
-  <test name="login_logout(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
         <methods>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="compose" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-          <include name="sign_in"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
     </classes>
-  </test> <!-- login_logout(failed) -->
-  <test name="sending_mail(failed)">
-    <classes>
-      <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
-        <methods>
-          <include name="setup"/>
-          <include name="compose"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
-    </classes>
-  </test> <!-- sending_mail(failed) -->
-  <test name="delete-sentlist(failed)">
-    <classes>
-      <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
-        <methods>
-          <include name="delete"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
-    </classes>
-  </test> <!-- delete-sentlist(failed) -->
-</suite> <!-- Failed suite [gmail_testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

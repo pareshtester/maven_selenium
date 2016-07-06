@@ -3,12 +3,16 @@
  */
 package com.ee.mavenlearning.com.ee.gmail;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 /**
@@ -21,8 +25,9 @@ public class signin {
 	drivers.BrowserType type=drivers.BrowserType.CHROME;
 	elements we ;
 	 	//String str="hjhjvhv";
+	String str=null;
 	public String url="http://www.gmail.com";
-	@BeforeTest
+	@BeforeMethod
 	public void setup() throws MalformedURLException{
 		
 		wd = drivers.Browser(type,true);
@@ -30,10 +35,10 @@ public class signin {
 		we= PageFactory.initElements(wd, elements.class);
 		
 	}
-	@Test
-	public void sign_in(){
-		String str=null;
-		we.sign(str);
+	@Test (dataProviderClass=dataprovider.class,dataProvider="info")
+	public void sign_in(String user,String pass){
+	String str=null;
+		we.sign(user,pass);
          if(str != null && !str.isEmpty()){
 	    	
 	    	we.sign_error(str);
@@ -46,11 +51,13 @@ public class signin {
 	
 	@AfterTest
 	public void close() throws InterruptedException{
-		we.logout();
+	//we.logout();
 		Thread.sleep(1000);
-		wd.quit();
+//	wd.quit();
 		
 	}
+	
+	
 	
 	
 	

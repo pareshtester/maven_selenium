@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
+      <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
         <methods>
           <include name="setup"/>
-          <include name="sign_in"/>
           <include name="close"/>
+          <include name="compose" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
+      </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
