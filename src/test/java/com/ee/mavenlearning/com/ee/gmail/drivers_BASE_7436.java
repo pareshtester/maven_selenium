@@ -34,7 +34,6 @@ public class drivers {
   // @SuppressWarnings("null")
 public static WebDriver Browser(BrowserType type,boolean isgrid) throws MalformedURLException{
 	    WebDriver wd=null;
-	    /*
 if(isgrid){
 		   
 		DesiredCapabilities dc = DesiredCapabilities.firefox();
@@ -43,13 +42,8 @@ if(isgrid){
 		return new RemoteWebDriver(new URL("http://192.168.0.4:1234/wd/hub"),dc);
 		
 		   
-<<<<<<< HEAD
 	   }
-	   */
-=======
-	   }*/
 	   
->>>>>>> 45eaf6949b78bc6d22aff8dee99b506a0a8ecf7e
 	   
 	   
 	   switch(type){

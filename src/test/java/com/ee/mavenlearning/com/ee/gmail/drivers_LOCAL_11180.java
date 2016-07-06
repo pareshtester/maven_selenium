@@ -43,13 +43,8 @@ if(isgrid){
 		return new RemoteWebDriver(new URL("http://192.168.0.4:1234/wd/hub"),dc);
 		
 		   
-<<<<<<< HEAD
 	   }
 	   */
-=======
-	   }*/
-	   
->>>>>>> 45eaf6949b78bc6d22aff8dee99b506a0a8ecf7e
 	   
 	   
 	   switch(type){
