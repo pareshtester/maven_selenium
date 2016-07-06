@@ -3,7 +3,19 @@
 <test  name="login_logout">
 <classes>
 
+<class  name="com.ee.mavenlearning.com.ee.gmail.signin"></class>
+</classes>
+</test>
+<test  name="compose">
+<classes>
+
 <class  name="com.ee.mavenlearning.com.ee.gmail.compose_mail"></class>
+</classes>
+</test>
+<test  name="delete">
+<classes>
+
+<class  name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist"></class>
 </classes>
 </test>
 

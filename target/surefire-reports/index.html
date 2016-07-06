@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-gmail_testing">
-              <span class="suite-name border-passed">gmail_testing</span>
+              <span class="suite-name border-failed">gmail_testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-gmail_testing" class="hide-methods failed suite-gmail_testing"> (hide)</a> <!-- hide-methods failed suite-gmail_testing -->
+                      <a href="#" panel-name="suite-gmail_testing" class="show-methods failed suite-gmail_testing"> (show)</a> <!-- show-methods failed suite-gmail_testing -->
+                    </span>
+                    <div class="method-list-content failed suite-gmail_testing">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.signin" hash-for-method="sign_in(mayureshmechanical@gail.com, doubleaction)">sign_in(mayureshmechanical@gail.com, doubleaction)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-gmail_testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-gmail_testing" class="hide-methods skipped suite-gmail_testing"> (hide)</a> <!-- hide-methods skipped suite-gmail_testing -->
+                      <a href="#" panel-name="suite-gmail_testing" class="show-methods skipped suite-gmail_testing"> (show)</a> <!-- show-methods skipped suite-gmail_testing -->
+                    </span>
+                    <div class="method-list-content skipped suite-gmail_testing">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.compose_mail" hash-for-method="compose(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii)">compose(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist" hash-for-method="delete(testerpareshpatil@gmail.com, testerparesh)">delete(testerpareshpatil@gmail.com, testerparesh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist" hash-for-method="delete(mayureshmechanical@gail.com, doubleaction)">delete(mayureshmechanical@gail.com, doubleaction)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-gmail_testing -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +139,7 @@
                     <div class="method-list-content passed suite-gmail_testing">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.compose_mail" hash-for-method="compose">compose</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist" hash-for-method="delete">delete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.signin" hash-for-method="sign_in">sign_in</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-gmail_testing" title="com.ee.mavenlearning.com.ee.gmail.signin" hash-for-method="sign_in(testerpareshpatil@gmail.com, testerparesh)">sign_in(testerpareshpatil@gmail.com, testerparesh)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-gmail_testing -->
@@ -126,21 +154,174 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-gmail_testing" class="panel gmail_testing">
-          <div class="suite-gmail_testing-class-passed">
+          <div class="suite-gmail_testing-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.ee.mavenlearning.com.ee.gmail.signin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sign_in(mayureshmechanical@gail.com, doubleaction)">
+                  </a> <!-- sign_in(mayureshmechanical@gail.com, doubleaction) -->
+                  <span class="method-name">sign_in</span>
+                  <span class="parameters">(mayureshmechanical@gail.com, doubleaction)</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: .//*[@id=&apos;Passwd&apos;]&apos;
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;paresh-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.ee.mavenlearning.com.ee.gmail.elements.sign(elements.java:82)
+	at com.ee.mavenlearning.com.ee.gmail.signin.sign_in(signin.java:41)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;Passwd&apos;]&quot;}
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;paresh-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+*** Element info: {Using=xpath, value=.//*[@id=&apos;Passwd&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 29 more
+... Removed 24 stack frames<br/> org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: .//*[@id=&apos;Passwd&apos;]&apos;
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;paresh-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.ee.mavenlearning.com.ee.gmail.elements.sign(elements.java:82)
+	at com.ee.mavenlearning.com.ee.gmail.signin.sign_in(signin.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;Passwd&apos;]&quot;}
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;paresh-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+*** Element info: {Using=xpath, value=.//*[@id=&apos;Passwd&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 29 more
+"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)<br>com.ee.mavenlearning.com.ee.gmail.elements.sign(elements.java:82)<br>com.ee.mavenlearning.com.ee.gmail.signin.sign_in(signin.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-gmail_testing-class-failed -->
+          <div class="suite-gmail_testing-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ee.mavenlearning.com.ee.gmail.compose_mail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compose(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii)">
+                  </a> <!-- compose(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii) -->
+                  <span class="method-name">compose</span>
+                  <span class="parameters">(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-gmail_testing-class-skipped -->
+          <div class="suite-gmail_testing-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.ee.mavenlearning.com.ee.gmail.deleting_sentlist</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="delete">
-                  </a> <!-- delete -->
+                  <a name="delete(testerpareshpatil@gmail.com, testerparesh)">
+                  </a> <!-- delete(testerpareshpatil@gmail.com, testerparesh) -->
                   <span class="method-name">delete</span>
+                  <span class="parameters">(testerpareshpatil@gmail.com, testerparesh)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete(mayureshmechanical@gail.com, doubleaction)">
+                  </a> <!-- delete(mayureshmechanical@gail.com, doubleaction) -->
+                  <span class="method-name">delete</span>
+                  <span class="parameters">(mayureshmechanical@gail.com, doubleaction)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-gmail_testing-class-passed -->
+          </div> <!-- suite-gmail_testing-class-skipped -->
           <div class="suite-gmail_testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -149,24 +330,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sign_in">
-                  </a> <!-- sign_in -->
+                  <a name="sign_in(testerpareshpatil@gmail.com, testerparesh)">
+                  </a> <!-- sign_in(testerpareshpatil@gmail.com, testerparesh) -->
                   <span class="method-name">sign_in</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-gmail_testing-class-passed -->
-          <div class="suite-gmail_testing-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ee.mavenlearning.com.ee.gmail.compose_mail</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="compose">
-                  </a> <!-- compose -->
-                  <span class="method-name">compose</span>
+                  <span class="parameters">(testerpareshpatil@gmail.com, testerparesh)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +353,16 @@
       &lt;class name=&quot;com.ee.mavenlearning.com.ee.gmail.signin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- login_logout --&gt;
-  &lt;test name=&quot;sending_mail&quot;&gt;
+  &lt;test name=&quot;compose&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ee.mavenlearning.com.ee.gmail.compose_mail&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sending_mail --&gt;
-  &lt;test name=&quot;delete-sentlist&quot;&gt;
+  &lt;/test&gt; &lt;!-- compose --&gt;
+  &lt;test name=&quot;delete&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ee.mavenlearning.com.ee.gmail.deleting_sentlist&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- delete-sentlist --&gt;
+  &lt;/test&gt; &lt;!-- delete --&gt;
 &lt;/suite&gt; &lt;!-- gmail_testing --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,10 +377,10 @@
                 <span class="test-name">login_logout (1 class)</span>
               </li>
               <li>
-                <span class="test-name">sending_mail (1 class)</span>
+                <span class="test-name">compose (1 class)</span>
               </li>
               <li>
-                <span class="test-name">delete-sentlist (1 class)</span>
+                <span class="test-name">delete (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -239,24 +406,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sign_in')
 data.setCell(0, 2, 'com.ee.mavenlearning.com.ee.gmail.signin')
-data.setCell(0, 3, 13291);
+data.setCell(0, 3, 36478);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'compose')
-data.setCell(1, 2, 'com.ee.mavenlearning.com.ee.gmail.compose_mail')
-data.setCell(1, 3, 4869);
+data.setCell(1, 1, 'sign_in')
+data.setCell(1, 2, 'com.ee.mavenlearning.com.ee.gmail.signin')
+data.setCell(1, 3, 11591);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'delete')
 data.setCell(2, 2, 'com.ee.mavenlearning.com.ee.gmail.deleting_sentlist')
-data.setCell(2, 3, 4103);
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'compose')
+data.setCell(3, 2, 'com.ee.mavenlearning.com.ee.gmail.compose_mail')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'delete')
+data.setCell(4, 2, 'com.ee.mavenlearning.com.ee.gmail.deleting_sentlist')
+data.setCell(4, 3, 0);
 window.suiteTableData['gmail_testing']= { tableData: data, tableDiv: 'times-div-gmail_testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-gmail_testing">
               </div> <!-- times-div-gmail_testing -->
             </div> <!-- times-div -->
@@ -283,48 +458,58 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.ee.mavenlearning.com.ee.gmail.signin</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sign_in</span>
-                <span class="method-start">29411 ms</span>
+                <span class="method-name">sign_in(testerpareshpatil@gmail.com, testerparesh)</span>
+                <span class="method-start">57710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">94188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sign_in(mayureshmechanical@gail.com, doubleaction)</span>
+                <span class="method-start">185507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">42705 ms</span>
+                <span class="method-start">201827 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ee.mavenlearning.com.ee.gmail.compose_mail</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">54069 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">222990 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">compose</span>
-                <span class="method-start">72523 ms</span>
+                <span class="method-name">compose(testerpareshpatil@gmail.com, testerparesh, amitsinghcccc@gmail.com, testing, hiiiii)</span>
+                <span class="method-start">306489 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">close</span>
-                <span class="method-start">77392 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ee.mavenlearning.com.ee.gmail.deleting_sentlist</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">81679 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">307202 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">delete</span>
-                <span class="method-start">98252 ms</span>
+                <span class="method-name">delete(testerpareshpatil@gmail.com, testerparesh)</span>
+                <span class="method-start">337228 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">close</span>
-                <span class="method-start">102355 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">delete(mayureshmechanical@gail.com, doubleaction)</span>
+                <span class="method-start">337229 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

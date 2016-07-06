@@ -1,57 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="3" failed="1" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="gmail_testing" duration-ms="106427" started-at="2016-07-06T03:46:48Z" finished-at="2016-07-06T03:48:34Z">
+  <suite name="gmail_testing" duration-ms="337498" started-at="2016-07-06T11:21:31Z" finished-at="2016-07-06T11:27:09Z">
     <groups>
     </groups>
-    <test name="login_logout" duration-ms="53822" started-at="2016-07-06T03:46:48Z" finished-at="2016-07-06T03:47:42Z">
+    <test name="login_logout" duration-ms="203098" started-at="2016-07-06T11:21:31Z" finished-at="2016-07-06T11:24:54Z">
       <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@1a25848]" name="setup" is-config="true" duration-ms="29402" started-at="2016-07-06T09:16:48Z" finished-at="2016-07-06T09:17:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@8dacdf]" name="setup" is-config="true" duration-ms="57710" started-at="2016-07-06T16:51:31Z" finished-at="2016-07-06T16:52:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sign_in()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@1a25848]" name="sign_in" duration-ms="13291" started-at="2016-07-06T09:17:17Z" finished-at="2016-07-06T09:17:31Z">
+        <test-method status="PASS" signature="sign_in(java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@8dacdf]" name="sign_in" duration-ms="36478" started-at="2016-07-06T16:52:29Z" data-provider="info" finished-at="2016-07-06T16:53:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testerpareshpatil@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testerparesh]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sign_in -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@1a25848]" name="close" is-config="true" duration-ms="11116" started-at="2016-07-06T09:17:31Z" finished-at="2016-07-06T09:17:42Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@8dacdf]" name="setup" is-config="true" duration-ms="91319" started-at="2016-07-06T16:53:06Z" finished-at="2016-07-06T16:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="sign_in(java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@8dacdf]" name="sign_in" duration-ms="11591" started-at="2016-07-06T16:54:37Z" data-provider="info" finished-at="2016-07-06T16:54:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mayureshmechanical@gail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doubleaction]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 10 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='Passwd']'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='Passwd']'
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.ee.mavenlearning.com.ee.gmail.elements.sign(elements.java:82)
+	at com.ee.mavenlearning.com.ee.gmail.signin.sign_in(signin.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='Passwd']"}
+  (Session info: chrome=51.0.2704.106)
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\paresh\AppData\Local\Temp\scoped_dir12936_24537}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=51.0.2704.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a685c10a1dfb4d170cb3cbbb7e776e99
+*** Element info: {Using=xpath, value=.//*[@id='Passwd']}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sign_in -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.signin@8dacdf]" name="close" is-config="true" duration-ms="1002" started-at="2016-07-06T16:54:53Z" finished-at="2016-07-06T16:54:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
     </test> <!-- login_logout -->
-    <test name="sending_mail" duration-ms="27574" started-at="2016-07-06T03:47:42Z" finished-at="2016-07-06T03:48:09Z">
+    <test name="compose" duration-ms="83888" started-at="2016-07-06T11:25:14Z" finished-at="2016-07-06T11:26:38Z">
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1f256fa]" name="setup" is-config="true" duration-ms="18454" started-at="2016-07-06T09:17:42Z" finished-at="2016-07-06T09:18:00Z">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@f71333]" name="setup" is-config="true" duration-ms="0" started-at="2016-07-06T16:55:14Z" finished-at="2016-07-06T16:55:14Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.90 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.90 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at com.ee.mavenlearning.com.ee.gmail.drivers.Browser(drivers.java:60)
+	at com.ee.mavenlearning.com.ee.gmail.compose_mail.setup(compose_mail.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1f256fa]" name="compose" duration-ms="4869" started-at="2016-07-06T09:18:00Z" finished-at="2016-07-06T09:18:05Z">
+        <test-method status="SKIP" signature="compose(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@f71333]" name="compose" duration-ms="0" started-at="2016-07-06T16:56:38Z" data-provider="compse_msg" finished-at="2016-07-06T16:56:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testerpareshpatil@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testerparesh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amitsinghcccc@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[hiiiii]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compose -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@1f256fa]" name="close" is-config="true" duration-ms="4251" started-at="2016-07-06T09:18:05Z" finished-at="2016-07-06T09:18:09Z">
+        <test-method status="SKIP" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.compose_mail@f71333]" name="close" is-config="true" duration-ms="0" started-at="2016-07-06T16:56:38Z" finished-at="2016-07-06T16:56:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-    </test> <!-- sending_mail -->
-    <test name="delete-sentlist" duration-ms="24747" started-at="2016-07-06T03:48:10Z" finished-at="2016-07-06T03:48:34Z">
+    </test> <!-- compose -->
+    <test name="delete" duration-ms="30541" started-at="2016-07-06T11:26:38Z" finished-at="2016-07-06T11:27:09Z">
       <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@18c7aca]" name="setup" is-config="true" duration-ms="16573" started-at="2016-07-06T09:18:10Z" finished-at="2016-07-06T09:18:26Z">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@1bcffb5]" name="setup" is-config="true" duration-ms="0" started-at="2016-07-06T16:56:39Z" finished-at="2016-07-06T16:56:39Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'paresh-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_92'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at com.ee.mavenlearning.com.ee.gmail.drivers.Browser(drivers.java:60)
+	at com.ee.mavenlearning.com.ee.gmail.deleting_sentlist.setup(deleting_sentlist.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.IllegalStateException: The process has not exited yet therefore no result is available ...
+	at org.apache.commons.exec.DefaultExecuteResultHandler.getException(DefaultExecuteResultHandler.java:76)
+	at org.openqa.selenium.os.UnixProcess.checkForError(UnixProcess.java:171)
+	at org.openqa.selenium.os.CommandLine.checkForError(CommandLine.java:185)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:177)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:166)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:78)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@18c7aca]" name="delete" duration-ms="4103" started-at="2016-07-06T09:18:26Z" finished-at="2016-07-06T09:18:30Z">
+        <test-method status="SKIP" signature="delete(java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@1bcffb5]" name="delete" duration-ms="1" started-at="2016-07-06T16:57:09Z" data-provider="info" finished-at="2016-07-06T16:57:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testerpareshpatil@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testerparesh]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delete -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@18c7aca]" name="close" is-config="true" duration-ms="4071" started-at="2016-07-06T09:18:30Z" finished-at="2016-07-06T09:18:34Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@1bcffb5]" name="setup" is-config="true" duration-ms="0" started-at="2016-07-06T16:57:09Z" finished-at="2016-07-06T16:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="delete(java.lang.String, java.lang.String)[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@1bcffb5]" name="delete" duration-ms="0" started-at="2016-07-06T16:57:09Z" data-provider="info" finished-at="2016-07-06T16:57:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mayureshmechanical@gail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[doubleaction]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:com.ee.mavenlearning.com.ee.gmail.deleting_sentlist@1bcffb5]" name="close" is-config="true" duration-ms="0" started-at="2016-07-06T16:57:09Z" finished-at="2016-07-06T16:57:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
-    </test> <!-- delete-sentlist -->
+    </test> <!-- delete -->
   </suite> <!-- gmail_testing -->
 </testng-results>

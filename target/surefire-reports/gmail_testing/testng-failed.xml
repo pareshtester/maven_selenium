@@ -3,17 +3,18 @@
 <suite verbose="0" name="Failed suite [gmail_testing]">
   <test name="login_logout(failed)">
     <classes>
+      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
+        <methods>
+          <include name="setup"/>
+          <include name="sign_in" invocation-numbers="1"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
         <methods>
           <include name="setup"/>
         </methods>
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-          <include name="sign_in"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
       <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
         <methods>
           <include name="setup"/>
@@ -21,28 +22,35 @@
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
     </classes>
   </test> <!-- login_logout(failed) -->
-  <test name="sending_mail(failed)">
+  <test name="compose(failed)">
     <classes>
+      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
         <methods>
           <include name="setup"/>
           <include name="compose"/>
         </methods>
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.compose_mail -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
       <class name="com.ee.mavenlearning.com.ee.gmail.deleting_sentlist">
         <methods>
           <include name="setup"/>
         </methods>
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
     </classes>
-  </test> <!-- sending_mail(failed) -->
-  <test name="delete-sentlist(failed)">
+  </test> <!-- compose(failed) -->
+  <test name="delete(failed)">
     <classes>
+      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
       <class name="com.ee.mavenlearning.com.ee.gmail.compose_mail">
         <methods>
           <include name="setup"/>
@@ -54,11 +62,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.ee.mavenlearning.com.ee.gmail.deleting_sentlist -->
-      <class name="com.ee.mavenlearning.com.ee.gmail.signin">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ee.mavenlearning.com.ee.gmail.signin -->
     </classes>
-  </test> <!-- delete-sentlist(failed) -->
+  </test> <!-- delete(failed) -->
 </suite> <!-- Failed suite [gmail_testing] -->
